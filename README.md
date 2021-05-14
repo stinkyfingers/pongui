@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### protobufs
+brew install protoc-gen-grpc-web
+
+protoc --proto_path /Users/john4123/gocode/pong/game --js_out=import_style=commonjs,binary:src/gamepb --grpc-web_out=import_style=commonjs,mode=grpcwebtext:/Users/john4123/js/pongui/src/gamepb /Users/john4123/gocode/pong/game/game.proto
+
+example: https://medium.com/swlh/building-a-realtime-dashboard-with-reactjs-go-grpc-and-envoy-7be155dfabfb
